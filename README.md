@@ -8,6 +8,7 @@
 - [AngularFire](https://firebaseopensource.com/projects/angular/angularfire2/)
 - [NGXS](https://www.ngxs.io/)
 - [Husky](https://github.com/typicode/husky)
+- [Commitizen](https://github.com/commitizen/cz-cli)
 
 ## Structure
 
