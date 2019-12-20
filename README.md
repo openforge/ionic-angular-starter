@@ -3,6 +3,7 @@
 ## Features
 
 - [Ionic](https://ionicframework.com/)
+- [Capacitor](https://capacitor.ionicframework.com/)
 - [Angular](https://angular.io/)
 - [AngularFire](https://firebaseopensource.com/projects/angular/angularfire2/)
 - [NGXS](https://www.ngxs.io/)

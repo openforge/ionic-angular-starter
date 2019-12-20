@@ -1,0 +1,8 @@
+{
+  "appId": "com.openforge.ionicAngularStarter",
+  "appName": "ionic-angular-starter",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
