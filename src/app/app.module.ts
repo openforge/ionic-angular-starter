@@ -10,6 +10,7 @@ import { AppState } from 'src/app/state/app.state';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { Feature1State } from './feature1/state/feature1.state';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    NgxsModule.forRoot([AppState], { developmentMode: !environment.production }),
+    NgxsModule.forRoot([AppState, Feature1State], { developmentMode: !environment.production }),
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [

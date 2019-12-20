@@ -1,6 +1,6 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { Feature1Page } from './feature1.page';
+import { Feature1Page } from './pages/feature1.page';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({

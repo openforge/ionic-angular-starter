@@ -1,21 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Action, Selector, State, StateContext } from '@ngxs/store';
-import { Feature1State } from '../feature1/state/feature1.state';
-import { ExampleAction, OtherExampleAction } from './app.actions';
+import { ExampleFeatureAction, OtherFeatureExampleAction } from './feature1.actions';
 
 export class ExampleStateModel {
     exampleProperty: string;
 }
 
 @State<ExampleStateModel>({
-  name: 'app',
+  name: 'feature1',
   defaults: {
     exampleProperty: ''
-  },
-  children: [Feature1State]
+  }
 })
 @Injectable() // Make NGXS compatible with Ivy
-export class AppState {
+export class Feature1State {
   constructor() {
   }
 
@@ -24,15 +22,15 @@ export class AppState {
     return state.exampleProperty;
   }
 
-  @Action(ExampleAction)
-  exampleAction({ patchState }: StateContext<ExampleStateModel>) {
+  @Action(ExampleFeatureAction)
+  ExampleFeatureAction({ patchState }: StateContext<ExampleStateModel>) {
     patchState({
         exampleProperty: ''
     });
   }
 
-  @Action(OtherExampleAction)
-  otherExampleAction({ patchState }: StateContext<ExampleStateModel>, { payload }: OtherExampleAction) {
+  @Action(OtherFeatureExampleAction)
+  OtherFeatureExampleAction({ patchState }: StateContext<ExampleStateModel>, { payload }: OtherFeatureExampleAction) {
     patchState({
         exampleProperty: payload
     });
