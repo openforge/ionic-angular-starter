@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { ExampleComponent } from './components/example/example.component';
 
 @NgModule({
     imports: [
@@ -14,9 +15,10 @@ import { IonicModule } from '@ionic/angular';
         IonicModule,
         CommonModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        ExampleComponent
     ],
-    declarations: [],
+    declarations: [ExampleComponent],
     providers: []
 })
 export class SharedModule { }
