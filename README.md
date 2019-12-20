@@ -7,6 +7,7 @@
 - [Angular](https://angular.io/)
 - [AngularFire](https://firebaseopensource.com/projects/angular/angularfire2/)
 - [NGXS](https://www.ngxs.io/)
+- [Husky](https://github.com/typicode/husky)
 
 ## Structure
 
