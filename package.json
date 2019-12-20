@@ -1,16 +1,22 @@
 {
   "name": "ionic-angular-starter",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
-  "description": "An Ionic project",
+  "author": "Openforge",
+  "homepage": "https://openforge.io/",
+  "description": "A starter project for Ionic Angular apps",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:qa": "ng build --c qa",
+    "build:staging": "ng build --c staging",
+    "build:production": "ng build --c production",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve": "ng serve",
+    "serve:qa": "ng serve --c qa",
+    "serve:staging": "ng serve --c staging",
+    "serve:production": "ng serve --c production"
   },
   "private": true,
   "dependencies": {
