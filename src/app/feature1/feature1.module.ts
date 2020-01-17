@@ -1,6 +1,6 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { Feature1Page } from './pages/feature1.page';
+import { Feature1Page } from './pages/feature1/feature1.page';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -10,4 +10,4 @@ import { SharedModule } from '../shared/shared.module';
   ],
   declarations: [Feature1Page]
 })
-export class Feature1PageModule {}
+export class Feature1PageModule { }
